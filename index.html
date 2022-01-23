@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="search">
+        <h2>Search Here</h2>
+
+        <input type="text" placeholder="Enter The Movie Name" id="here">
+        <button onclick="mymovies()"><img src="icon.jpg" alt=""></button>
+    </div> 
+
+    <div class="pic"></div>
+
+    <script>
+         var search = document.getElementById("here");
+
+         function mymovies()
+         {
+             if(search.value == "dhamaal")
+             {
+                 window.open("https://www.imdb.com/title/tt0845448/" , "_blank");
+             }
+             else if(search.value == "double dhamaal")
+             {
+                 window.open("https://www.imdb.com/title/tt1728239/" , "_blank");
+             }
+             else if(search.value == "total dhamaal")
+             {
+                 window.open("https://www.imdb.com/title/tt7639372/" , "_blank");
+             }
+             else if(search.value == "hera pheri")
+             {
+                 window.open("https://www.imdb.com/title/tt0242519/" , "_blank");
+             }
+             else
+             {
+                alert("this movie is not available");
+             }
+         }
+    </script>
+    
+</body>
+</html>
